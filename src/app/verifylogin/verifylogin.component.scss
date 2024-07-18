@@ -1,0 +1,48 @@
+.otp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   /* Adjust height as needed */
+  padding: 20px;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.otp-input {
+  width: 40px;
+}
+
+
+.center-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px; /* Add some margin if needed */
+}
+.resent{
+  margin-top: 10px;
+}
+.submit-btn {
+  margin-top: 10px;
+  margin-left: 85px;
+}
+
+.resend-btn {
+  margin-top: 10px;
+  background-color: #ff4081; /* Set your desired color for resend button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.custom-progress-bar {
+  height: 2cm; /* Set the desired height */
+  width: 10%; /* Ensures full width */
+  margin-left: 10px;
+ 
+}
+

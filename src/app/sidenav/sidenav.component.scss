@@ -1,0 +1,133 @@
+.content
+{
+  padding: 24px;
+}
+mat-toolbar
+{
+  position: relative;
+  z-index: 5;
+}
+mat-sidenav-container
+{
+  height: calc(100vh - 64px);
+}
+.sidenav-header
+{
+  padding-top: 24px;
+  text-align: center;
+}
+.img{
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.header-text{
+  .h2{
+    margin:0;
+    font-size: 0.8rem;
+  }
+}
+
+// Styles for mat-toolbar and mat-sidenav
+.mat-toolbar {
+  background-color: #1976d2; // Example background color
+  color: white; // Example text color
+}
+
+.mat-sidenav {
+  background-color: #a6c3d1; // Example background color for sidenav
+}
+
+// Styles for sidenav header
+.sidenav-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa2a2;
+}
+
+.header-text {
+  margin-left: 12px;
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+  }
+  p {
+    font-size: 1rem;
+    color: #666;
+  }
+}
+
+// Styles for mat-nav-list and mat-list-item
+mat-nav-list {
+  padding-top: 8px;
+}
+
+mat-list-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &.active-link {
+    background-color: #e3f2fd; // Example active link background color
+    color: #1976d2; // Example active link text color
+
+    // Adjust icon color if needed
+    mat-icon {
+      color: #1976d2;
+    }
+  }
+
+  mat-icon {
+    margin-right: 12px;
+    color: #757575; // Example icon color
+  }
+
+  span {
+    font-size: 1rem;
+  }
+}
+
+// Styles for mat-sidenav-content
+mat-sidenav-content.content {
+  padding: 16px;
+  transition: margin-left 0.3s ease;
+
+  // Adjust content margin based on sidenav visibility
+  &[style*="margin-left"] {
+    margin-left: 240px; // Adjust as per your sidenav width
+  }
+}
+/* Assuming 'active-link' class is applied when the link is active */
+
+/* Default link styles */
+a {
+  color: #333; /* Default link color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Styles for active link */
+a.active-link {
+  color: #1976d2; /* Blue color for active link */
+  font-weight: bold; /* Optionally make the text bold */
+}
+.logout-button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.fullscreen {
+
+margin-left: 1200px;
+//  margin: 16px; /* Optional: Add some margin if needed */
+ // z-index: 1000; /* Ensure it is on top of other elements */
+}

@@ -1,0 +1,32 @@
+/* Import a background image or use a solid color */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('../assets/images/ecomm.jpg') center center/cover no-repeat;
+
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px; /* Limit the maximum width of the card */
+  padding: 20px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.action-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  span {
+    margin-right: 10px;
+  }
+}
+

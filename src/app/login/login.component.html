@@ -1,0 +1,50 @@
+<div class="login-container">
+  <mat-card-header>
+    <mat-card-title>Login</mat-card-title>
+  </mat-card-header>
+  <mat-card class="login-card">
+    <form [formGroup]="loginForm">
+      <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" placeholder="Ex. pat@example.com" required>
+        <mat-error *ngIf="loginForm.get('email')?.hasError('required')">
+          Email is required.
+        </mat-error>
+        <mat-error *ngIf="loginForm.get('email')?.hasError('email')">
+          Invalid email format.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput  [type]="hide ? 'password' : 'text'" formControlName="password"  (keydown)="checkMaxLength($event, 'password')">
+        <button mat-icon-button matSuffix (click)="togglePasswordVisibility()" type="button">
+          <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+        <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
+          Password is required.
+        </mat-error>
+        <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">
+          Password must be at least 4 characters long.
+        </mat-error>
+      </mat-form-field>
+<p-toast></p-toast>
+<mat-progress-bar *ngIf="showProgressBar" mode="indeterminate"  ></mat-progress-bar>
+      <button mat-flat-button color="primary" type="submit" [disabled]="loginForm.invalid" (click)="onSubmit()">
+        Login
+      </button>
+
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+    </form>
+    <div class="action-links">
+      <span>Don't have an account?</span>
+      <button mat-button color="primary" (click)="navigateToRegister()">Register</button>
+      <span>Forgot your password?</span>
+      <button mat-button color="warn" (click)="navigateToResetPassword()">Reset Password</button>
+    </div>
+
+
+  </mat-card>
+</div>

@@ -1,0 +1,69 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Example background color */
+}
+
+.login-card {
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Card background color */
+}
+
+.example-full-width {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.mat-form-field {
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: #ff0000; /* Error message color */
+  margin-top: 10px;
+}
+
+.mat-card-header {
+  background-color: #3f51b5; /* Card header background color */
+  color: white; /* Card header text color */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.mat-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 16px;
+}
+
+.mat-form-field-appearance-fill.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  color: #3f51b5; /* Label color */
+}
+
+.mat-form-field-appearance-fill.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-underline {
+  background-color: #3f51b5; /* Underline color */
+}
+
+.mat-form-field-appearance-fill.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-ripple {
+  background-color: #3f51b5; /* Ripple color */
+}
+
+button.mat-flat-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.mat-error {
+  font-size: 14px;
+  color: #ff0000; /* Error message color */
+}
+
+textarea.mat-input-element {
+  min-height: 100px; /* Adjust textarea height */
+}
+
